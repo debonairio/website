@@ -5,7 +5,7 @@ tags = ["stylish-stacks"]
 author = "brandon"
 +++
 
-"A debonair must know the entire stack." - wise man
+"A debonair must know the entire stack." - wise man.
 
 A software stack is quite an abstract thought. You can think of it as a set of programs that work together to produce an end result.
 
