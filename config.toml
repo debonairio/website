@@ -1,0 +1,7 @@
+baseurl = "http://www.debonair.io"
+languageCode = "en-us"
+title = "Debonair.io"
+
+[params]
+  description = "Classy code, debonair developers, inspiring infrastructure, and stylish stacks."
+  hideHUGOSupport = true
