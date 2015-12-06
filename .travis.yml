@@ -5,6 +5,8 @@ services:
 
 before_install:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - git submodule init
+  - git submodule update
 
 script:
   - docker build -t debonairio/website:latest .
