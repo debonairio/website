@@ -1,4 +1,9 @@
-# Complete guide to continuous deployment to maven central from Travis CI
++++
+date = "2015-12-08T18:35:55+00:00"
+title = "Complete guide to continuous deployment to maven central from Travis CI"
+tags = ["maven", "continuous", "deployment", "central", "travis", "github"]
+author = "nathan"
++++
 Continuous deployment is a very useful tool, especially for open source projects. Commonly the people in an open source project accepting pull requests might not all have the permissions or skills to also deploy those changes, but with continuous deployment they don't need to. Once code is accepted into the master branch it is deployed automatically. This allows for agile features and bugfixes without taking up the time of the few individuals doing the deploying.
 
 This guide will bring your maven library project from being built and installed locally, to being built and code-signed in the cloud and deployed to maven central. The guide makes a few assumptions about your starting point:
