@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/debonairio/website.svg?branch=master)](https://travis-ci.org/debonairio/website)
+
 # Contributing (Complete Install)
 1. Install [Hugo](https://github.com/spf13/hugo/releases)
 2. git clone https://github.com/debonairio/website
