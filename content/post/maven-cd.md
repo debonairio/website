@@ -4,9 +4,11 @@ title = "Complete guide to continuous deployment to maven central from Travis CI
 tags = ["maven", "continuous", "deployment", "central", "travis", "github"]
 author = "nathan"
 +++
+
 Continuous deployment is a very useful tool, especially for open source projects. Commonly the people in an open source project accepting pull requests might not all have the permissions or skills to also deploy those changes, but with continuous deployment they don't need to. Once code is accepted into the master branch it is deployed automatically. This allows for agile features and bugfixes without taking up the time of the few individuals doing the deploying.
 
 This guide will bring your maven library project from being built and installed locally, to being built and code-signed in the cloud and deployed to maven central. The guide makes a few assumptions about your starting point:
+
 * Your project already is a valid maven project (if it's not, see [here](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html))
 * Your project is hosted on github (if not, [create a repo](https://help.github.com/articles/create-a-repo/))
 * You are using Linux, OSX or other *nix system with bash
@@ -18,6 +20,7 @@ OSSRH is a free host for open source projects in maven central. If you do not al
 
 ## Configure maven project for upload to OSSRH
 Before we can start to look at uploading, we need to ensure our project has all the information it needs to be a quality library. We need to fill out the following fields in our pom.xml:
+
 * `name` - the name of the project
 * `description` - a short description
 * `url` - location where users can go to get more information about the library
@@ -54,6 +57,7 @@ Once complete, these might look like this:
 ```
 
 In order to deploy to central, we need maven to do four things (called plugins in maven) above and beyond its usual role: 
+
 * sign
 * package docs
 * package source
@@ -352,6 +356,7 @@ If all goes well, we should be able to check this into our master branch, see it
 If you have any questions, or tips on how to improve the guide, feel free to contact me at nfischer921@gmail.com
 
 ## Resources
+
 * https://alexcabal.com/creating-the-perfect-gpg-keypair/
 * https://maven.apache.org/plugins/maven-gpg-plugin/sign-mojo.html
 * https://www.gnupg.org/documentation/manpage.html
