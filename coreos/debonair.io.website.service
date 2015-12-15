@@ -1,7 +1,7 @@
 [Unit]
 Description=Container running debonairio/website.
-After=docker.service systemd-networkd-wait-online.service systemd-resolved.service
-Requires=docker.service systemd-networkd-wait-online.service systemd-resolved.service
+After=docker.service user-config.target
+Requires=docker.service user-config.target
 
 [Service]
 TimeoutStartSec=0
