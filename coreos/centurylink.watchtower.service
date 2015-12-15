@@ -1,0 +1,15 @@
+[Unit]
+Description=Container running centurylink/watchtower.
+After=docker.service user-config.target
+Requires=docker.service user-config.target
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill watchtower
+ExecStartPre=-/usr/bin/docker rm watchtower
+ExecStartPre=/usr/bin/docker pull centurylink/watchtower
+ExecStart=/usr/bin/docker run --name watchtower -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower
+ExecStop=/usr/bin/docker stop watchtower
+
+[Install]
+WantedBy=multi-user.target
