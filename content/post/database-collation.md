@@ -25,7 +25,7 @@ I decided to come with a little unscientific experiment where I would create a t
 I found a tool called [generatedata.com](http://www.generatedata.com/) which I could use to generate the data. The demo version would not let me generate more than 1000 rows, but the source code of the app is on GitHub. I was able to use the [Vagrant packaged version](https://github.com/benkeen/generatedata-vagrant) and I generated two sets of data, each containing 100,000 rows. One with an [integer column](https://gist.github.com/chothia/5a8280f0c6b08b22a1d8) and the other with a [string column](https://gist.github.com/chothia/4eb61c4bd0b5a0450360).
 
 I first started a postgres docker container:
-```shell docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres 
+- docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres 
 
 I used the following commands to load the data from the sql files. If you are using docker-machine, use the commands docker-machine ip nameOfYourMachine and replace 192.168.99.100 with your ip. If you are on linux, the container is probably running on localhost.
 - psql -h 192.168.99.100 -U postgres -f string-values.sql
