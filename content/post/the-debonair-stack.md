@@ -1,5 +1,5 @@
 +++
-date = "2014-11-05T01:21:00-07:00"
+date = "2014-09-30T01:21:00-07:00"
 title = "The Debonair Stack  - Part 1 : Introduction"
 tags = ["stylish-stacks"]
 author = "brandon"
