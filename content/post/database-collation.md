@@ -5,7 +5,7 @@ tags = ["debonair-deep-dive"]
 author = "brandon"
 +++
 
-##Background
+## Background
 I was having an interesting discussion with some fellow debonairs regarding database normalization. The discussion took a technical turn and we got on the topic of whether an integer search in a database is faster than a string search.
 
 I took a stroll down memory lane and I remember my database professor mentioning that integer searches are faster, but I could not remember why.
@@ -19,7 +19,7 @@ However, you may want to treat your search case insensitive, and so you may use 
 
 All this theory is fascinating, but as any disquisitive debonair should, I decided to take a deeper dive and run an unscientific experiment.
 
-##Unscientific Experiment
+## Unscientific Experiment
 I decided to come with a little unscientific experiment where I would create a two database tables. Each would have randomly generated data, but one would have a column with integers and another with string.
 
 I found a tool called [generatedata.com](http://www.generatedata.com/) which I could use to generate the data. The demo version would not let me generate more than 1000 rows, but the source code of the app is on GitHub. I was able to use the [Vagrant packaged version](https://github.com/benkeen/generatedata-vagrant) and I generated two sets of data, each containing 100,000 rows. One with an [integer column](https://gist.github.com/chothia/5a8280f0c6b08b22a1d8) and the other with a [string column](https://gist.github.com/chothia/4eb61c4bd0b5a0450360).
