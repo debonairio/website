@@ -8,7 +8,7 @@ TimeoutStartSec=0
 ExecStartPre=-/usr/bin/docker kill watchtower
 ExecStartPre=-/usr/bin/docker rm watchtower
 ExecStartPre=/usr/bin/docker pull centurylink/watchtower
-ExecStart=/usr/bin/docker run --name watchtower -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower --interval 60
+ExecStart=/usr/bin/docker run --name watchtower -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower --interval "60"
 ExecStop=/usr/bin/docker stop watchtower
 
 [Install]
