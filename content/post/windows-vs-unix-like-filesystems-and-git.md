@@ -17,6 +17,8 @@ When developing and colloborating on scripts that need to be run on Windows, Mac
 
 ## The Fix
 Once a file is commited, a windows developer can run this command to add executable permissions:
+
 `git update-index --chmod=+x file.sh`
+
 Voila! Now any developer cloning the repository can run the file without any hassle.
 
