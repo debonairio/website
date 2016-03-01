@@ -6,3 +6,4 @@ DisqusShortname = "debonairio"
 [params]
   description = "Classy code, debonair developers, inspiring infrastructure, and stylish stacks."
   hideHUGOSupport = true
+  googleAnalyticsUserID = "UA-74511069-1"
